@@ -200,6 +200,8 @@ public class CityEval
 
 		double r = (double)engine.resPop / (double)b;
 		b = (int)Math.floor((r-1.0)*255);
+		// Count the Service Center, every center will decrease 5 percent unemployment number
+		// at most 30%
 		if (b > 255) {
 			b = 255;
 		}

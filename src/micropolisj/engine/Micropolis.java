@@ -121,6 +121,7 @@ public class Micropolis
 	int policeCount;
 	int fireStationCount;
 	int stadiumCount;
+	// int servicecenterCount
 	int coalCount;
 	int nuclearCount;
 	int seaportCount;
@@ -534,6 +535,7 @@ public class Micropolis
 		policeCount = 0;
 		fireStationCount = 0;
 		stadiumCount = 0;
+		// servicecenterCount = 0;
 		coalCount = 0;
 		nuclearCount = 0;
 		seaportCount = 0;
@@ -1387,7 +1389,7 @@ public class Micropolis
 			// residents demand stadium
 			resValve = 0;
 		}
-
+		// residents demand service center
 		if (comCap && comValve > 0) {
 			// commerce demands airport
 			comValve = 0;
