@@ -121,7 +121,7 @@ public class Micropolis
 	int policeCount;
 	int fireStationCount;
 	int stadiumCount;
-	// int servicecenterCount
+	int serviceCenterCount;
 	int coalCount;
 	int nuclearCount;
 	int seaportCount;
@@ -535,7 +535,7 @@ public class Micropolis
 		policeCount = 0;
 		fireStationCount = 0;
 		stadiumCount = 0;
-		// servicecenterCount = 0;
+		serviceCenterCount = 0;
 		coalCount = 0;
 		nuclearCount = 0;
 		seaportCount = 0;
@@ -1469,6 +1469,7 @@ public class Micropolis
 		bb.put("STADIUM_FULL", new MapScanner(this, MapScanner.B.STADIUM_FULL));
 		bb.put("AIRPORT", new MapScanner(this, MapScanner.B.AIRPORT));
 		bb.put("SEAPORT", new MapScanner(this, MapScanner.B.SEAPORT));
+		bb.put("SERVICECENTER", new MapScanner(this, MapScanner.B.SERVICECENTER));
 
 		this.tileBehaviors = bb;
 	}

@@ -1009,3 +1009,20 @@
 957   misc_animation@0,2080
 958   misc_animation@0,2096
 959   misc_animation@0,2112
+# BEGIN SERVICECENTER #
+960   service_center@0,0           (conducts)
+961   service_center@16,0          (conducts)
+962   service_center@32,0          (conducts)
+963   service_center@48,0          (conducts)
+964   service_center@0,16          (conducts)
+965   service_center@16,16   (zone)(conducts)(building=4x4)(behavior=SERVICECENTER)(description=#30)
+966   service_center@32,16         (conducts)
+967   service_center@48,16         (conducts)
+968   service_center@0,32          (conducts)
+969   service_center@16,32         (conducts)
+970   service_center@32,32         (conducts)
+971   service_center@48,32         (conducts)
+972   service_center@0,48          (conducts)
+973   service_center@16,48         (conducts)
+974   service_center@32,48         (conducts)
+975   service_center@48,48         (conducts)

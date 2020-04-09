@@ -41,7 +41,8 @@ class MapScanner extends TileBehavior
 		STADIUM_EMPTY,
 		STADIUM_FULL,
 		AIRPORT,
-		SEAPORT;
+		SEAPORT,
+		SERVICECENTER;
 	}
 
 	@Override
@@ -83,6 +84,9 @@ class MapScanner extends TileBehavior
 			return;
 		case SEAPORT:
 			doSeaport();
+			return;
+		case SERVICECENTER:
+			doServiceCenter();
 			return;
 		default:
 			assert false;
@@ -276,6 +280,20 @@ class MapScanner extends TileBehavior
 		city.stadiumCount++;
 		if (((city.cityTime + xpos + ypos) % 8) == 0) {
 			drawStadium(STADIUM);
+		}
+	}
+	
+	void doServiceCenter()
+	{
+		boolean powerOn = checkZonePower();
+		city.serviceCenterCount++;
+		if ((city.cityTime % 16) == 0) {
+			repairZone(SERVICECENTER, 4);
+		}
+
+		if (powerOn)
+		{
+			// do something
 		}
 	}
 

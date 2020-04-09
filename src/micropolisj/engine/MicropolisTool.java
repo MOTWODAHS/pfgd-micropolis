@@ -24,13 +24,13 @@ public enum MicropolisTool
 	FIRE(3, 500),
 	POLICE(3, 500),
 	STADIUM(4, 5000),
-	SERVICECENTER(4,1000),
 	PARK(1, 10),
 	SEAPORT(4, 3000),
 	POWERPLANT(4, 3000),
 	NUCLEAR(4, 5000),
 	AIRPORT(6, 10000),
-	QUERY(1, 0);
+	QUERY(1, 0),
+	SERVICECENTER(4,1000);
 
 	int size;
 	int cost;
