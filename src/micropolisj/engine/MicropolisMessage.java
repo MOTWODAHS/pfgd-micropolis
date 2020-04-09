@@ -60,7 +60,9 @@ public enum MicropolisMessage
 	RIOTING_REPORT,
 
 	// added by Jason
-	NO_NUCLEAR_PLANTS;
+	NO_NUCLEAR_PLANTS,
+	// added by Tom Du
+	NEED_SERVICECENTER;
 
 	/** Whether the message should be displayed in the notification pane. */
 	public boolean useNotificationPane = false;

@@ -293,7 +293,8 @@ class MapScanner extends TileBehavior
 
 		if (powerOn)
 		{
-			// do something
+			// If service center has power, then available count ++
+			city.serviceCenterAvailableCount++;
 		}
 	}
 

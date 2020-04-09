@@ -122,6 +122,7 @@ public class Micropolis
 	int fireStationCount;
 	int stadiumCount;
 	int serviceCenterCount;
+	int serviceCenterAvailableCount;
 	int coalCount;
 	int nuclearCount;
 	int seaportCount;
@@ -535,6 +536,7 @@ public class Micropolis
 		policeCount = 0;
 		fireStationCount = 0;
 		stadiumCount = 0;
+		serviceCenterAvailableCount = 0;
 		serviceCenterCount = 0;
 		coalCount = 0;
 		nuclearCount = 0;
@@ -2560,6 +2562,18 @@ public class Micropolis
 			resCap = (resPop > 500 && stadiumCount == 0);
 			if (resCap) {
 				sendMessage(MicropolisMessage.NEED_STADIUM);
+			}
+			int b = (comPop + indPop) * 8;
+			// Deal with dividing zero error
+			if (b == 0) {
+				break;
+			}
+			// Calculate the unemployment rate
+			double r = (double)resPop / (double)b - 1.0D;
+			if (r > 1.0D && resPop > 1000) {
+				if (serviceCenterAvailableCount < 6) {
+					sendMessage(MicropolisMessage.NEED_SERVICECENTER);
+				}
 			}
 			break;
 		case 28:
