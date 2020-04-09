@@ -24,6 +24,7 @@ public enum MicropolisTool
 	FIRE(3, 500),
 	POLICE(3, 500),
 	STADIUM(4, 5000),
+	SERVICECENTER(4,1000),
 	PARK(1, 10),
 	SEAPORT(4, 3000),
 	POWERPLANT(4, 3000),
@@ -64,6 +65,7 @@ public enum MicropolisTool
 		case FIRE:
 		case POLICE:
 		case STADIUM:
+		case SERVICECENTER:
 		case SEAPORT:
 		case POWERPLANT:
 		case NUCLEAR:

@@ -42,6 +42,9 @@ class BuildingTool extends ToolStroke
 
 		case STADIUM:
 			return applyZone(eff, STADIUM);
+			
+		case SERVICECENTER:
+			return applyZone(eff, SERVICECENTER);
 
 		case SEAPORT:
 			return applyZone(eff, PORT);
